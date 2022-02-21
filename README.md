@@ -2,6 +2,10 @@
 This is a basic implementation of a Neural Network for the purposes of study. Buggy as any 1957 Volkswagen Beetle you can find. 
 Neural Network from scratch sources:
 
+3Blue1Brown's Summary of Neural Networks using Newton's Method
+https://www.youtube.com/watch?v=aircAruvnKk&list=PLZHQObOWTQDNU6R1_67000Dx_ZCJB-3pi&ab_channel=3Blue1Brown
+3Blue1Brown
+
 Machine Learning From Scratch In Python - Full Course With 12 Algorithms (5 HOURS)
 https://www.youtube.com/watch?v=rLOyrWV8gmA&ab_channel=PythonEngineer
 by Python Engineer
