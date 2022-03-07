@@ -5,8 +5,17 @@ import Backprop
 
 
 X, y = spiral_data(100, 3)
-t = zip(X, y)
-print(t[0])
+#print(X, y)
+
+m, n = X.shape
+data_dev = X[0:1000].T
+Y_dev = y
+X_dev = 1
+
+def OneHot():
+    nb_classes = 3
+    target = np.array(y)
+    one_hot = np.eye(nb_classes)[target]
 
 class Layer():
     def __init__(self, inputs_ct, neurons_ct) -> None:
@@ -17,14 +26,14 @@ class Layer():
 
 class Activ_ReLU():
     omega = "ReLU"
-    def forward(self, inputs):
-        self.output = np.maximum(0, inputs) + self.biases
+    def forward(self, inputs, biases):
+        self.output = np.maximum(0, inputs) + biases
 
 
 class Activ_SoftMax():
     omega = "SoftMax"
-    def forward(self, inputs):
+    def forward(self, inputs, biases):
         exp_vals = np.exp(inputs - np.max(inputs, axis = 1, keepdims = True)) 
         norm_vals = exp_vals / np.sum(exp_vals, axis = 1, keepdims=True)
-        self.output = norm_vals + self.biases
+        self.output = norm_vals + biases
 
