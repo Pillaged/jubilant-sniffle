@@ -1,4 +1,4 @@
-# jubilant-sniffle
+# jubilant - Machine Learning from Scratch
 This is a basic implementation of a Neural Network for the purposes of study. Buggy as any 1957 Volkswagen Beetle you can find. 
 Neural Network from scratch sources:
 
